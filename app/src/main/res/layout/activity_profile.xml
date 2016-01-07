@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:id="@+id/textView1"/>
+    <Button
+        android:layout_width="440px"
+        android:layout_height="80px"
+        android:layout_gravity="center"
+        android:id="@+id/add_butt"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:text="Add task"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:text="Your tasks:"
+        android:gravity="center"
+        android:id="@+id/label"
+        android:textSize="25sp"/>
+    <ListView
+        android:id="@+id/lvMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </ListView>
+
+</LinearLayout>

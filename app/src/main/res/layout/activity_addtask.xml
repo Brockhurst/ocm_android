@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Add task"
+                android:gravity="center"
+                android:textSize="20sp">
+            </TextView>
+            <EditText
+                android:layout_width="440px"
+                android:layout_height="80px"
+                android:layout_gravity="center"
+                android:layout_marginTop="30px"
+                android:id="@+id/add_title"
+                android:hint="Title"/>
+            <EditText
+                android:layout_width="440px"
+                android:layout_height="80px"
+                android:layout_gravity="center"
+                android:layout_marginTop="30px"
+                android:id="@+id/add_executor"
+                android:hint="Executor"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/add_desc"
+                android:hint="Put task description here"/>
+
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datePicker"
+                android:layout_gravity="center_horizontal" />
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timePicker" />
+
+            <Button
+                android:layout_width="440px"
+                android:layout_height="80px"
+                android:layout_gravity="center"
+                android:id="@+id/add_button"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:text="Add task"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
